@@ -1,0 +1,237 @@
+<!-- Login Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-family: Arial;
+        }
+
+        #background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            z-index: -1;
+        }
+
+        #image1 {
+            display: inline-block;
+            width: 320px;
+            height: fit-content;
+            border: 3px solid orange;
+            border-radius: 50%;
+            position: relative;
+            left: 160px;
+            top: 170px;
+            animation: rotateimg 25s infinite linear;
+        }
+
+        @keyframes rotateimg {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        fieldset {
+            /*background-color: black;*/
+            backdrop-filter: blur(15px);
+            /*background: rgba(255, 255, 255, 0.2);*/
+            color: white;
+            width: 520px;
+            height: 370px;
+            border: 3.5px solid orange;
+            border-radius: 12px;
+            margin-top: 140px;
+            position: absolute;
+            top: 0px;
+            left: 543px;
+        }
+
+        #content {
+            position: relative;
+            left: 30px;
+        }
+
+        h1 {
+            margin-bottom: 35px;
+        }
+
+        #username {
+            width: 360px;
+            height: 40px;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        #user-logo {
+            width: 50px;
+            border: none;
+            background-color: orange;
+            border-top-left-radius: 3.5px;
+            border-bottom-left-radius: 3.5px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #user-input {
+            width: 300px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            padding-left: 10px;
+            border-top-right-radius: 3.5px;
+            border-bottom-right-radius: 3.5px;
+        }
+
+        #user-input:hover {
+            border: 2px solid orange;
+        }
+
+        #password {
+            width: 360px;
+            height: 40px;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        #password-logo {
+            width: 50px;
+            border: none;
+            background-color: orange;
+            border-top-left-radius: 3.5px;
+            border-bottom-left-radius: 3.5px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #password-input {
+            width: 300px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            padding-left: 10px;
+            border-top-right-radius: 3.5px;
+            border-bottom-right-radius: 3.5px;
+        }
+
+        #password-input:hover {
+            border: 2px solid orange;
+        }
+
+        #remember {
+            height: 28px;
+            display: inline-block;
+        }
+
+        #rem-text {
+            position: relative;
+            bottom: 8px;
+            left: 1px;
+        }
+
+        #login {
+            width: 80px;
+            height: 40px;
+            background-color: orange;
+            font-size: 15px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            position: relative;
+            left: 135px;
+            top: 35px;
+        }
+
+        a {
+            text-decoration: none;
+            color: orange;
+        }
+
+        #reg {
+            position: relative;
+            top: 40px;
+        }
+
+        #login:hover {
+            background-color: rgb(231, 150, 0);
+            border: 2px solid white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="img/orange-background.webp" alt="Orange" id="background">
+
+    <img src="img/concert-image2.jpg" alt="MBU" id="image1">
+
+    <fieldset>
+        <form action="">
+            <h1 align="center">Sign In</h1>
+            <div id="content">
+                <div id="username">
+                    <div id="user-logo">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input type="text" id="user-input" placeholder="Username" required>
+                </div>
+
+                <div id="password">
+                    <div id="password-logo">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <input type="password" id="password-input" placeholder="Password" required>
+                </div>
+
+                <label for="rem-text">
+                    <input type="checkbox" id="rem-text">
+                    <span id="rem-text">Remember me</span></label>
+
+                <button id="login" onclick="save()"><a href="HomePage.html" style="color: #fff;">Login</a></button><br>
+
+                <div id="reg">
+                    <span>Don't have an account?</span>
+                    <a href="SignUp.html" target="_blank">Register User</a>
+                </div>
+        </form>
+        </div>
+    </fieldset>
+
+    <script>
+
+        function save() {
+            var x = document.getElementById("user-input").value;
+            localStorage.setItem("f1", x);
+            var y = document.getElementById("password-input").value;
+            localStorage.setItem("p1", y);
+        }
+
+    </script>
+</body>
+
+</html>

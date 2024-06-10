@@ -1,0 +1,153 @@
+* {
+    font-family: Arial;
+}
+
+#background {
+    width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+
+#fieldset {
+    /* background-color: black; */
+    background-image: radial-gradient(hsla(0, 0%, 50%, 0.126), hsla(0, 0%, 0%, 0.349));
+    color: white;
+    width: 520px;
+    height: 370px;
+    /* border: 3.5px solid orange; */
+    border-radius: 12px;
+    position: relative;
+    left: 520px;
+    top: 0px;
+}
+
+#content {
+    position: relative;
+    left: 30px;
+}
+
+h1 {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+#username {
+    width: 360px;
+    height: 40px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#user-logo {
+    width: 50px;
+    border: none;
+    background-color: orange;
+    border-top-left-radius: 3.5px;
+    border-bottom-left-radius: 3.5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-input {
+    width: 300px;
+    border: none;
+    font-size: 15px;
+    padding-left: 10px;
+    border-top-right-radius: 3.5px;
+    border-bottom-right-radius: 3.5px;
+}
+
+#user-input:hover {
+    border: 2px solid orange;
+}
+
+#password {
+    width: 360px;
+    height: 40px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#password-logo {
+    width: 50px;
+    border: none;
+    background-color: orange;
+    border-top-left-radius: 3.5px;
+    border-bottom-left-radius: 3.5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#password-input {
+    width: 300px;
+    border: none;
+    font-size: 15px;
+    padding-left: 10px;
+    border-top-right-radius: 3.5px;
+    border-bottom-right-radius: 3.5px;
+}
+
+#password-input:hover {
+    border: 2px solid orange;
+}
+
+#remember {
+    height: 28px;
+    display: inline-block;
+}
+
+#rememberme {
+    position: relative;
+    bottom: 8px;
+    left: 1px;
+}
+
+#login {
+    width: 80px;
+    height: 40px;
+    background-color: orange;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 135px;
+    top: 35px;
+}
+#login a{
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+#register {
+    position: relative;
+    top: 40px;
+}
+
+#login:hover {
+    background-color: rgb(231, 150, 0);
+    border: 2px solid white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.home_page{
+    background-image:radial-gradient(gray , white);
+}

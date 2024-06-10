@@ -1,0 +1,318 @@
+<!-- Registration Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        
+        #background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        * {
+            font-family: Arial;
+        }
+
+        #position1 {
+            display: inline-block;
+            width: 730px;
+            height: 1300px;
+            position:absolute;
+            left: 615px;
+            margin-top: 50px;
+            margin-bottom: 500px;
+            border-radius: 15px;
+            border: 3.5px solid orange;
+            backdrop-filter: blur(15px);
+            color: white;
+        }
+
+        #image1{
+            display: inline-block;
+            position: relative;
+            top: 350px;
+            left: 170px;
+            width: 320px;
+            height: fit-content;
+            border: 8px solid white;
+            border-radius: 80%;
+            border: 3.2px solid orange;
+            animation: rotatembu 25s infinite linear;
+        }
+
+        form{
+            padding-top: 25px;
+        }
+
+        fieldset {
+            width: 700px;
+            height: 1350px;
+            border-color: transparent;
+        }
+
+        .flex1 {
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        .flex2 {
+            display: inline-block;
+            margin-left: 195px;
+        }
+
+        .box {
+            width: 200px;
+            height: 40px;
+            border: 2px solid orange;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        input {
+            padding-left: 10px;
+            font-size: 16px;
+        }
+
+        .box:hover {
+            border: 3px solid orange;
+        }
+
+        #fullname {
+            margin-bottom: 40px;
+        }
+
+        #email {
+            margin-bottom: 40px;
+        }
+
+        #Password {
+            margin-bottom: 40px;
+        }
+
+        #dob {
+            margin-bottom: 10px;
+        }
+
+        #Gender {
+            margin-left: 40px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        #gender11 {
+            margin-right: 30px;
+            font-size: 17.5px;
+        }
+
+        #gender12 {
+            margin-right: 30px;
+            font-size: 17.5px;
+        }
+
+        #gender13 {
+            font-size: 17.5px;
+        }
+
+        #address {
+            margin-bottom: 40px;
+        }
+
+        #pin {
+            display: inline-block;
+            bottom: 10px;
+            margin-bottom: 40px;
+        }
+
+        #terms {
+            display: inline-block;
+            position: relative;
+            bottom: 25px;
+            left: 40px;
+        }
+
+        #register {
+            width: 500px;
+            height: 50px;
+            position: relative;
+            left: 95px;
+            top: 20px;
+            font-size: 20px;
+            background-color: orange;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        @keyframes rotatembu {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        #register:hover {
+              border: 2px solid white;
+              background-color: rgb(230, 150, 0);
+        }
+
+        #c1 {
+            margin-right: 30px;
+            font-size: 17.5px;
+        }
+
+        #c2 {
+            margin-right: 30px;
+            font-size: 17.5px;
+        }
+
+        #c3 {
+            font-size: 17.5px;
+        }
+
+        .c11 {
+            margin-left: -3px;
+        }
+
+        .c12 {
+            margin-left: 17px;
+        }
+
+        .c13 {
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        .c14 {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        #year {
+            position: relative;
+            left: 260px;
+            bottom: 130px;
+        }
+
+        select {
+            font-style: italic;
+            color: rgb(112, 112, 112);
+            padding-left: 8px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <img src="img/orange-background.webp" alt="BackGround" id="background"> 
+
+    <img src="img/concert-image3.jpg" alt="" id="image1">
+
+    <div id="position1">
+    <fieldset>
+    <form action="index.php" method="post">
+        <h1 align="center"><u>Sign Up</u></h1><br><br>
+
+        <div id="fullname" class="flex1" id="flex3">
+            <p>Full Name</p>
+            <input type="text" name="name1" id="name1" placeholder="Enter your name" class="box" required>
+        </div>
+
+        <div id="username" class="flex2" id="flex3">
+            <p>Username</p>
+            <input type="text" name="uname1" id="name1" placeholder="Enter your username" class="box" required>
+        </div>
+
+        <div id="email" class="flex1" class="flex4">
+            <p>Email</p>
+            <input type="email" name="email1" id="email1" placeholder="Enter your email" class="box" required>
+        </div>
+
+        <div id="roll" class="flex2" class="flex4">
+            <p>Promo Code</p>
+            <input type="text" name="promo1" id="promo1" placeholder="Promo code (if any)" class="box">
+        </div>
+
+        <div id="Password" class="flex1" class="flex5">
+            <p>Password</p>
+            <input type="password" name="password1" id="password1" placeholder="Enter your password" class="box" required>
+        </div>
+
+        <div id="ConfirmPassword" class="flex2" class="flex5">
+            <p>Confirm Password</p>
+            <input type="password" name="password2" id="password2" placeholder="Confirm your password" class="box" required>
+        </div>
+
+        <div id="dob" class="flex1" class="flex5">
+            <p>Date of Birth</p>
+            <input type="date" name="dob1" id="dob1" class="box" required>
+        </div>
+
+        <div id="Phone" class="flex2" class="flex4">
+            <p>Phone Number</p>
+            <input type="tel" name="phone1" id="phone1" placeholder="Enter your number" class="box" required>
+        </div>
+
+        <div id="Gender">
+            <p>Gender</p>
+            <span id="gender11"><label for="gender1"><input type="radio" name="gender" value="Male" id="gender1">Male</label></span>
+            <span id="gender12"><label for="gender2"><input type="radio" name="gender" value="Female" id="gender2">Female</label></span>
+            <label for="gender3"><input type="radio" name="gender" value="Prefer not to say" id="gender3">Prefer not to say</label>
+        </div>
+
+        <div id="address" class="flex1" class="flex5">
+            <p>Address</p>
+            <input type="text" name="address1" id="address1" placeholder="Enter your address" class="box">
+        </div>
+
+        <div id="pin" class="flex2" class="flex4">
+            <p>Pin Code</p>
+            <input type="number" name="pin1" id="pin1" placeholder="Enter the pin code" class="box">
+        </div>
+
+        <div id="course" class="flex1" class="flex5">
+            <p>Select Languages</p>
+            <div class="c14"><span id="c1"><label for="course1"><input type="checkbox" name="lan[]" id="course1" value="English">English</label></span>
+            <span id="c2" class="c11"><label for="course2"><input type="checkbox" name="lan[]" id="course2" value="Hindi">Hindi</label></span>
+            <span id="c3" class="c12"><label for="course3"><input type="checkbox" name="lan[]" id="course3" value="Telugu">Telugu</label></span></div><br>
+            <div class="c13">
+            <span id="c1"><label for="course4"><input type="checkbox" name="lan[]" id="course4" value="Tamil">Tamil</label></span>
+            <span id="c2"><label for="course5"><input type="checkbox" name="lan[]" id="course5" value="Kannada">Kannada</label></span>
+            <span id="c3"><label for="course6"><input type="checkbox" name="lan[]" id="course6" value="Malayalam">Malayalam</label></span>
+        </div>
+        </div>
+
+        <div id="year" class="flex2" class="flex4">
+        <p>Ticket Type</p>
+        <select name="type" id="type" class="box" required>
+            <option value="select" disabled selected>select</option>
+            <option value="General">General</option>
+            <option value="VIP">VIP</option>
+            <option value="Student Discount">Student Discount</option>
+            <option value="Early Bird">Early Bird</option>
+            <option value="Other">Other</option>
+        </select>
+        </div>
+
+        <div id="terms">
+            <label for="reg"><input type="checkbox" id="reg" required>
+            <span id="reg"><i>By registering, I agree to the </label><a href=""><u style="color:orange;">Terms and Conditions</u></a></i></span>
+        </div>
+        
+        <!-- <input type="submit" id="register" value="Register"> -->
+        <button id="register">Register</button>
+    </form>
+    </fieldset>
+    </div>
+
+</body>
+</html>
